@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Food Menu</title>
+   <link rel="stylesheet" href="./food-menu.css">
+  
+    
+</head>
+<body>
+                                     <!-- start navbar -->
+  <div class="nav">
+    <div class="menu-wrap">
+        <a href="#home">
+            <div class="logo">
+                HomelyCooks
+            </div>
+        </a>
+        <div class="menu h-xs">
+            <a href="../home/Home.html">
+                <div class="menu-item ">
+                    Home
+                </div>
+            </a>
+            <a href="../Recepie/recep.html">
+                <div class="menu-item">
+                    Recepie
+                </div>
+            </a>
+            
+            <a  href="../Food-menu/food-menu.html">
+                <div class="menu-item active">
+                    Menu
+                </div>
+            </a>
+            <a href="../profile/profile.html">
+                <div class="menu-item">
+                    Profile
+                </div>
+            </a>
+        </div>
+        <div class="right-menu">
+            <div class="cart-btn">
+                <a href="../FoodCart/cart.html">
+                <i class='bx bx-cart-alt'></i>
+                </a>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+                                                 <!-- End navbar -->
+                                                 <!-- Start MenuCard -->
+    <div class="food-menu">
+        <h1>
+            What will <span class="primary-color">you</span> eat today?
+        </h1>
+        <p>
+           Our handpicked Menu is ready to serve you. 
+        </p>
+        <div class="food-category">
+            <div>
+                <button class="active" data-food-type="all">
+                    All food
+                </button>
+            </div>
+            <div>
+                <button data-food-type="burgers">
+                    Burger
+                </button>
+            </div>
+            <div>
+                <button data-food-type="pizza">
+                    Pizza
+                </button>
+            </div>
+            <div>
+                <button data-food-type="Desserts">
+                    Desserts
+                </button>
+            </div>
+            <div>
+                <button data-food-type="Homely">
+                    Homely
+                </button>
+            </div>
+        </div>
+
+        <div class="food-item-wrap all">
+            <div class="food-item food-type">
+                <div class="item-wrap">
+                    <div class="item-img">
+                        <div class="img-holder image"
+                            style="background-image: url(/assets/food1.png);background-size: cover;width: 250px;height: 300px;margin-left: 60px;"></div>
+                    </div>
+                    <div class="item-info">
+                        <div>
+                          <span>
+                           
+                          </span>
+                        <div class="name">
+                            <h3>
+                               Pot Carnitas
+                            </h3>
+                        </div>
+                        <div class="price">
+                            <span>
+                                Rs 299
+                            </span>
+                        </div>
+                        </div>
+                        <div class="add-to-cart cart-btn">
+                            <i class="bx bx-cart-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="item-wrap">
+                    <div class="item-img">
+                        <div class="img-holder image"
+                            style="background-image: url('/assets/food2.png');background-size: cover;width: 300px;height: 300px;"></div>
+                    </div>
+                    <div class="item-info">
+                        <div>
+                        <div class="name">
+                            <h3>
+                                Rainbow summer sushi rolls
+                            </h3>
+                        </div>
+                        <div class="price">
+                            <span>
+                                Rs 399
+                            </span>
+                        </div>
+                        </div>
+                        <div class="add-to-cart cart-btn">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-item ipsum-type">
+                <div class="item-wrap">
+                    <div class="item-img">
+                        <div class="img-holder image"
+                            style="background-image: url('/assets/food3.png');background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <div>
+                         <div class="name">
+                            <h3>
+                               Chicken with Veggie salad
+                            </h3>
+                         </div>
+                         <div class="price">
+                            <span>
+                                Rs 359
+                            </span>
+                         </div>
+                        </div>
+                        <div class="add-to-cart cart-btn">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-item lorem-type">
+                <div class="item-wrap">
+                    <div class="item-img">
+                        <class class="img-holder image "
+                            style="background-image: url('/assets/food4.png');background-size: cover;margin-left: 50px;"></class>
+                    </div>
+                    <div class="item-info">
+                        <div>
+                         <div class="name">
+                            <h3>
+                                Steak Frites with chilli fries
+                            </h3>
+                        </div>
+                        <div class="price">
+                            <span>
+                                Rs 239
+                            </span>
+                        </div>
+                        </div>
+                        <div class="add-to-cart cart-btn">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-item dolor-type">
+                <div class="item-wrap">
+                    <div class="item-img">
+                        <div class="img-holder bg-img"
+                            style="background-image: url('/assets/food5.png');background-size: cover;width: 200px;margin-left: 50px;"></div>
+                    </div>
+                    <div class="item-info">
+                        <div>
+                            <h3>
+                                Pepper steak with brandy sauce
+                            </h3>
+                            <span>
+                                Rs 559
+                            </span>
+                        </div>
+                        <div class="add-to-cart cart-btn">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-item salad-type">
+                <div class="item-wrap">
+                    <div class="item-img">
+                        <div class="img-holder bg-img"
+                            style="background-image: url('/assets/food6.png');background-size: cover;width:200px;margin-top: 30px;margin-left: 30px;"></div>
+                    </div>
+                    <div class="item-info">
+                        <div>
+                            <h3>
+                                Roasted pumpkin with hummus
+                            </h3>
+                            <span>
+                                Rs 499
+                            </span>
+                        </div>
+                        <div class="add-to-cart cart-btn">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-item lorem-type">
+                <div class="item-wrap">
+                    <div class="item-img">
+                        <div class="img-holder bg-img"
+                            style="background-image: url('/assets/food7.png');background-size: cover;width: 300px;"></div>
+                    </div>
+                    <div class="item-info">
+                        <div>
+                            <h3>
+                                Chicken and cauliflower Ricebowl
+                            </h3>
+                            <span>
+                                Rs 799
+                            </span>
+                        </div>
+                        <div class="add-to-cart cart-btn">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-item dolor-type">
+                <div class="item-wrap">
+                    <div class="item-img">
+                        <div class="img-holder bg-img"
+                            style="background-image: url('/assets/food8.png');background-size: cover;"></div>
+                    </div>
+                    <div class="item-info">
+                        <div>
+                            <h3>
+                                French Fry Box
+                            </h3>
+                            <span>
+                                Rs 999
+                            </span>
+                        </div>
+                        <div class="add-to-cart cart-btn">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                              <!-- End MenuCard -->
+
+ <script src="./food-cart.js"></script>
+</body>
+</html>
