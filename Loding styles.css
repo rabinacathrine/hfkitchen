@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    overflow: hidden;
+  
+}
+
+.container
+{
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.row
+{
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 100vh;
+}
+.col
+ {
+    width: 50%;
+    
+}
+
+.items_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}
+.form-wrapper
+ {
+    width: 100%;
+    max-width: 28rem;
+}
+
+.form
+{
+   
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(0);
+    transition:.3s ease-in-out;
+    transition-delay: 1s;
+    outline: none;
+
+}
+
+
+.input-group
+{
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.input-group i
+{
+position: absolute;
+top: 50%;
+left: 1em;
+transform: translateY(-50%);
+font-size: 1.2rem;
+color: #efefef;
+
+}
+
+.input-group input
+{
+    width: 100%;
+    padding: 1em 3em;
+    font-size: 1em;
+    background-color: #efefef;
+    border-radius: 1em;
+    box-shadow:  rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    border: 0.125rem solid #ffffff;
+    outline: none;
+}
+
+.input-group input:focus {
+    border: 0.125rem solid #cf2b4e;
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+.form button
+{
+    cursor: pointer;
+    width: 50%;
+    border-radius: 1rem;
+    padding: 10px 0px 10px 0px;
+    background-color: #cf2b4e;
+    color: white;
+    font-size: 1rem;
+    
+    outline: none;
+    border: none;
+}
+.form button:hover {
+    box-shadow: -4px 1px 31px 5px rgba(0,0,0,0.34);
+-webkit-box-shadow: -4px 1px 31px 5px rgba(0,0,0,0.34);
+-moz-box-shadow: -4px 1px 31px 5px rgba(0,0,0,0.34);
+}
+
+.flex-col
+{
+    flex-direction: column;
+}
+.social-login
+{
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(0);
+    transition: .5s ease-in-out;
+    transition-delay: 1.2s;
+}
+.social-login>div {
+    color: white;
+    margin: 0 .5rem;
+    padding: .7rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    cursor: pointer;
+    transform: scale(0);
+    transition: .5s ease-in-out;
+}
+.social-login>div:hover
+{
+     -webkit-box-shadow: 6px 0px 10px 0px rgba(117, 50, 50, 0.75);
+    -moz-box-shadow:6px 0px 10px 0px rgba(117, 50, 50, 0.75);
+    box-shadow:6px 0px 10px 0px rgba(117, 50, 50, 0.75);
+}
+
+.facebook-bg
+{
+   background-color:#4267B2;
+}
+.google-bg
+{
+    background-color:#DB4437 ;
+}
+.twitter-bg
+{
+    background-color:#1DA1F2 ;
+}
+.instagram-bg
+{
+    background-color: #E1306C;
+}
+
+.cursor
+{
+    cursor: pointer;
+}
+.container.sign-in .form.sign-in,
+.container.sign-in .social-login.sign-in,
+.container.sign-in .social-login.sign-in>div,
+.container.sign-up .form.sign-up,
+.container.sign-up .social-login.sign-up,
+.container.sign-up .social-login.sign-up>div {
+    transform: scale(1);
+}
+
+.content-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 6;
+    width: 100%;
+}
+
+.text {
+    margin: 4rem;
+    color: white;
+}
+
+.text h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 2rem 0;
+    transition: 1s ease-in-out;
+}
+
+.text p {
+    font-weight: 600;
+    transition: 1s ease-in-out;
+    transition-delay: .2s;
+}
+
+.img img {
+    width: 25vw;
+    transition: 1s ease-in-out;
+    transition-delay: .4s;
+}
+
+.text.sign-in h2,
+.text.sign-in p,
+.img.sign-in img {
+    transform: translateX(-250%);
+}
+
+.text.sign-up h2,
+.text.sign-up p,
+.img.sign-up img {
+    transform: translateX(250%);
+}
+
+.container.sign-in .text.sign-in h2,
+.container.sign-in .text.sign-in p,
+.container.sign-in .img.sign-in img,
+.container.sign-up .text.sign-up h2,
+.container.sign-up .text.sign-up p,
+.container.sign-up .img.sign-up img {
+    transform: translateX(0);
+}
+.container::before {
+    content: "";
+    position: absolute;
+    /* top: 0;
+    right: 0; */
+    height: 100vh;
+    width: 300vw;
+    transform: translate(45%, 0);
+    background-color:  #cf2b4e;
+    transition: 1s ease-in-out;
+    z-index: 6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom-right-radius: max(50vw, 50vh);
+    border-top-left-radius: max(50vw, 50vh);
+}
+
+.container.sign-in::before {
+    transform: translate(0, 0);
+    right: 50%;
+}
+
+.container.sign-up::before {
+    transform: translate(100%, 0);
+    right: 50%;
+}
+.next
+{
+    text-decoration: none;
+}

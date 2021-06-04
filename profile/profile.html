@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./profile.css">
+    <script src="./profile.js"></script>
+    
+</head>
+<body>
+                                     <!-- starting navbar -->
+  <div class="nav">
+    <div class="menu-wrap">
+        <a href="#home">
+            <div class="logo">
+                HomelyCooks
+            </div>
+        </a>
+        <div class="menu h-xs">
+            <a href="../home/Home.html">
+                <div class="menu-item">
+                    Home
+                </div>
+            </a>
+            <a href="../Recepie/recep.html">
+                <div class="menu-item">
+                    Recepie
+                </div>
+            </a>
+            
+            <a  href="../Food-menu/food-menu.html">
+                <div class="menu-item">
+                    Menu
+                </div>
+            </a>
+            <a href="../profile/profile.html">
+                <div class="menu-item active">
+                    Profile
+                </div>
+            </a>
+        </div>
+        <div class="right-menu">
+            <div class="cart-btn">
+              <a href="../FoodCart/cart.html">
+                <i class='bx bx-cart-alt'></i>
+              </a>
+            </div>
+        </div>
+    </div>
+</div>                          
+                                            <!-- End navbar -->
+<!-- UserProfile card -->
+<div class="space">
+    <h1 class="title-pen"> User Profile <span>UI</span></h1>
+<div class="user-profile">
+	<img class="avatar" src="/assets/Profile.jpg" alt="Ash" />
+    <div class="username">Ash Smith</div>
+  
+  <div class="bio">
+  	Junior Chef
+    <div class="level-up">
+      <p>LVL <span>0</span></p>
+    </div>
+  </div>
+  
+    <div class="description">
+      I use to cook part time and my favorite dishes are chicken curry and italian cusine.
+  </div>
+  <ul class="data">
+    <li>
+      <span class="entypo-heart"> 127</span>
+    </li>
+    <li>
+      <span class="entypo-eye"> 53</span>
+    </li>
+    <li>
+      <span class="entypo-user"> 311</span>
+    </li>
+ </ul>
+ <div class="full-container">
+ <div>
+  <p>your progress</p> 
+ </div>
+<div class="container">
+    
+  <div id="progression-bar">
+   
+  
+  </div>
+
+  <button onClick="more()">click</button>
+
+  </div>
+ </div>
+</div>
+</body>
+</html>
