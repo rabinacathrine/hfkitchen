@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepie</title>
+    <link rel="stylesheet" href="./recep.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION -->
+    <div class="container">
+        <div class="nav">
+            <div class="menu-wrap">
+                <a href="#home">
+                    <div class="logo">
+                        HomelyCooks
+                    </div>
+                </a>
+                <div class="menu h-xs">
+                    <a href="../home/Home.html">
+                        <div class="menu-item ">
+                            Home
+                        </div>
+                    </a>
+                    <a href="../Recepie/recep.html">
+                        <div class="menu-item active">
+                            Recepie
+                        </div>
+                    </a>
+                    
+                    <a  href="../Food-menu/food-menu.html">
+                        <div class="menu-item">
+                            Menu
+                        </div>
+                    </a>
+                    <a href="../profile/profile.html">
+                        <div class="menu-item">
+                            Profile
+                        </div>
+                    </a>
+                </div>
+                <div class="right-menu">
+                    <div class="cart-btn">
+                        <i class='bx bx-cart-alt'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NAVIGATION---End -->
+        <div class="row text-center">
+            <h3>
+                Ready To Cook?
+            </h3>
+            <h5>Get a random Recepie by clicking below</h5>
+            <button class="button-primary" id="get_meal">Get Recepie </button>
+    
+        </div>
+        <div id="meal" class="row meal"></div>
+    </div>
+    <script src="./recep.js"></script>
+</body>
+</html>
